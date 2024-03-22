@@ -10,7 +10,7 @@
 <body>
     <canvas></canvas>
 <div>Happy Holi NPSTIAN</div>
-<div>
+<div style="display:flex;justify-content:center;margin-top:20px">
     <img src="https://timepayonline.com/assets/images/TimePay%20Logo_Final_Inverted%201-01.png" width="50%" height="50%" alt="">
 </div>
     <script>
@@ -33,7 +33,7 @@ var isWebGL2 = !!gl;
 if (!isWebGL2) {
     gl = canvas.getContext('webgl', params) || canvas.getContext('experimental-webgl', params);
 }
-gl.clearColor(0.0, 0.0, 0.0, 1.0);
+gl.clearColor(0,0,0, 1.0);
 
 var halfFloat = gl.getExtension('OES_texture_half_float');
 var support_linear_float = gl.getExtension('OES_texture_half_float_linear');
